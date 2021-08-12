@@ -63,6 +63,7 @@ export default class Timeline {
   }
 
   createTextPost() {
+    this.geo();
     const post = this.markupОfThePost(this.text);
     this.feed.insertBefore(post, this.feed.firstElementChild);
   }
